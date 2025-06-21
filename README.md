@@ -72,8 +72,6 @@ Install Backend Dependencies:
 Navigate to the server directory and install the required dependencies:
 
 bash
-कॉपी करें
-बदलें
 cd server
 npm install
 Configure Environment Variables:
@@ -81,8 +79,7 @@ Configure Environment Variables:
 Create a .env file in the server directory with the following configuration:
 
 env
-कॉपी करें
-बदलें
+
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
@@ -93,9 +90,6 @@ Run the Backend:
 
 Run the following command to start the server:
 
-bash
-कॉपी करें
-बदलें
 npm start
 The backend will be available at http://localhost:5000.
 
@@ -104,9 +98,7 @@ Install Frontend Dependencies:
 
 Navigate to the client directory and install the required dependencies:
 
-bash
-कॉपी करें
-बदलें
+
 cd client
 npm install
 Configure Environment Variables:
@@ -114,16 +106,13 @@ Configure Environment Variables:
 Create a .env file in the client directory and add the following:
 
 env
-कॉपी करें
-बदलें
+
 REACT_APP_API_URL=http://localhost:5000
 Run the Frontend:
 
 Run the following command to start the frontend:
 
-bash
-कॉपी करें
-बदलें
+
 npm start
 The frontend will be available at http://localhost:3000.
 
@@ -151,8 +140,7 @@ In the Backend (server.js):
 Make sure you configure CORS middleware correctly:
 
 javascript
-कॉपी करें
-बदलें
+
 const cors = require('cors');
 const corsOptions = {
   origin: 'https://yourfrontendurl.com', // Replace with your frontend URL
@@ -193,8 +181,6 @@ Fetch all products.
 Response:
 
 json
-कॉपी करें
-बदलें
 [
   {
     "id": "12345",
@@ -211,8 +197,6 @@ Add a new product.
 Request Body:
 
 json
-कॉपी करें
-बदलें
 {
   "name": "Shirt",
   "type": "Clothing",
@@ -223,8 +207,6 @@ json
 Response:
 
 json
-कॉपी करें
-बदलें
 {
   "id": "12345",
   "name": "Shirt",
@@ -237,8 +219,7 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 markdown
-कॉपी करें
-बदलें
+
 
 ### What to do with this file:
 1. Copy the above code.
